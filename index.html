@@ -1,0 +1,35 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prueba 1</title>
+			<meta name="description" content="Primeras pruebas con html y css"/>
+			<meta name="author" content="Lluis Antoni Ferrer Muñoz" />
+			<meta charset="utf-8" /> 
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="styles.css">
+		</head>
+		<body>
+				<nav class="navbar navbar-dark  bg-primary ">
+					<img src="src/image/logo.png" alt="Logo" class="imgLogo">
+					<h1 class="cwhite">Buscador y reproductor de Soundcloud</h1>
+				</nav>
+				<form id="songSearch" class="row justify-content-md-center songSearch">
+					<input type="text" id='searchBar' placeholder="Busca una cancion" class="col-sm-6 form-control">
+					<button type="submit" class="btn btn-outline-primary col-sm-2" >Buscar</button>
+				</form>
+				<div class="reproductor">
+					<iframe id="sc-widget" width="80%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?"></iframe>
+				</div>
+				<div class="arrastrador" ondrop="drop(event)" ondragover="allowDrop(event)">
+						Arrastra una cancion aqui para reproducir
+				</div>
+				<div class="row searchSongs"></div>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+			<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+			<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+			<script src="script.js"></script>
+		</body>
+	</html>

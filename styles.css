@@ -1,0 +1,70 @@
+<style>
+.aaaa{}
+	.navbar{
+		justify-content: start;
+	}
+	.reproductor{
+		display: flex;
+	   	justify-content: center;
+	   	margin-bottom: 20px;
+	}
+	.arrastrador{
+		border:solid 1px black;
+		display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   height: 30px;
+	   margin-bottom: 20px
+
+	}
+	.imgLogo{
+		width: 100px;
+		margin-right: 20px;
+	}
+	.cwhite{
+		color:white;
+	}
+	.song{
+		border: solid 2px white;
+		height: 100px;
+		width: 300px;
+		margin: 5px;
+		cursor: move;
+	}
+	.songimg{
+		margin-top: 10px;
+		height: 80%;
+		border-radius: 50%;
+		pointer-events: none;
+	}
+	.grupName{
+		color:#222f2f;
+	}
+	.songName{
+	 	font-weight: bold;
+	 	color: black;
+	 	font-size: 14;
+	    overflow:hidden;
+	    white-space:nowrap;
+	    text-overflow: ellipsis;
+	}
+	.songSearch{
+		margin-bottom: 15px;
+		margin-top: 15px;
+		overflow:hidden;
+	    white-space:nowrap;
+	    text-overflow: ellipsis;
+	}
+	.searchSongs{
+		width: 90%
+		display: flex;
+	   justify-content: center;
+	}
+	.container{
+		text-align: center;
+		border: 10px;
+	}
+	.btn{
+		margin-left: 20px;
+	}
+</style>
